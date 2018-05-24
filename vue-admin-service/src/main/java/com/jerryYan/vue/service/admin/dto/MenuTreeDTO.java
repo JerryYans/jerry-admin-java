@@ -1,6 +1,6 @@
 package com.jerryYan.vue.service.admin.dto;
 
-import com.jerryYan.vue.jpa.entity.vueadmin.AdminMenu;
+import com.jerryYan.vue.jpa.entity.vueadmin.SysMenu;
 import lombok.Data;
 
 import java.util.ArrayList;
@@ -21,7 +21,7 @@ public class MenuTreeDTO {
 
     }
 
-    public MenuTreeDTO(AdminMenu menu){
+    public MenuTreeDTO(SysMenu menu){
         this.id = menu.getId();
         this.parentId = menu.getParentId();
         this.sort = menu.getSort();

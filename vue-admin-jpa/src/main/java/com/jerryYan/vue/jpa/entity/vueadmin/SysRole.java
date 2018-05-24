@@ -2,19 +2,16 @@ package com.jerryYan.vue.jpa.entity.vueadmin;
 
 import lombok.Data;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.Date;
 
 @Entity
 @Data
-@Table(name = "admin_role")
-public class AdminRole {
+@Table(name = "sys_role")
+public class SysRole {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String name;
     private String description;

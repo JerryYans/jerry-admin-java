@@ -2,6 +2,7 @@ package com.jerryYan.vue.internal.controller;
 
 import com.jerryYan.vue.common.entity.JsonResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 

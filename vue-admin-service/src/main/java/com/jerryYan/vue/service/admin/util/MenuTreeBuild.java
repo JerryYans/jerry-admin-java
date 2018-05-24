@@ -1,6 +1,6 @@
 package com.jerryYan.vue.service.admin.util;
 
-import com.jerryYan.vue.jpa.entity.vueadmin.AdminMenu;
+import com.jerryYan.vue.jpa.entity.vueadmin.SysMenu;
 import com.jerryYan.vue.service.admin.dto.MenuTreeDTO;
 
 import java.util.ArrayList;
@@ -15,7 +15,7 @@ public class MenuTreeBuild {
         return menuTree;
     }
 
-    public static void addMenuItem(MenuTreeDTO rootTree, AdminMenu menu){
+    public static void addMenuItem(MenuTreeDTO rootTree, SysMenu menu){
         if (menu.getParentId() == rootTree.getId()){
             rootTree.getChildren().add(new MenuTreeDTO(menu));
         }else {
